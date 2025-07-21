@@ -65,8 +65,22 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 1rem !important;
 }
 
+/* Fix for navigation buttons - preserve button text color */
+.nav-link.btn {
+    color: inherit !important;
+}
+
+.nav-link.btn-primary {
+    color: white !important;
+}
+
 .nav-link:hover {
     color: var(--accent-color) !important;
+}
+
+/* Don't apply hover color to navigation buttons */
+.nav-link.btn:hover {
+    color: inherit !important;
 }
 
 /* Property Cards */
@@ -373,7 +387,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-slide-1 {
-    background-image: url('../img/hero-1.jpg');
+    background-image: url('/static/img/hero-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .property-img-cover {

@@ -149,7 +149,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Mapbox configuration
-MAPBOX_TOKEN = os.environ.get('MAPBOX_TOKEN', 'pk.eyJ1IjoibWNqdW5pb3IiLCJhIjoiY203b3l4a3VwMGVzNjJpczNlYXBzZzlqOCJ9.AZUaXY9bK_ToBJLGfdT9Og')
+MAPBOX_TOKEN = os.environ.get('MAPBOX_TOKEN', '')
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
